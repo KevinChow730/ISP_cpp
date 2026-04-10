@@ -1,0 +1,28 @@
+{
+  "version": 4,
+  "configurations": [
+    {
+      "name": "MinGW64",
+      "compilerPath": "D:/mingw64/bin/g++.exe",
+      "intelliSenseMode": "windows-gcc-x64",
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "includePath": [
+        "${workspaceFolder}/srcs/include",
+        "${workspaceFolder}/thirdparty/easylog",
+        "${workspaceFolder}/thirdparty/easybmp",
+        "${workspaceFolder}/thirdparty/json/nlohmann",
+        "${workspaceFolder}/thirdparty"
+      ],
+      "defines": [],
+      "browse": {
+        "path": [
+          "${workspaceFolder}/srcs/include",
+          "${workspaceFolder}/srcs/sources",
+          "${workspaceFolder}/thirdparty"
+        ],
+        "limitSymbolsToIncludedHeaders": true
+      }
+    }
+  ]
+}
