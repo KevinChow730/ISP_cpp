@@ -38,6 +38,10 @@ add_executable (${PROJECT_NAME} ${SRCS})
 #${OpenCV_LIBS}
 target_link_libraries(${PROJECT_NAME}  easylog easybmp modules)
 
+if (WIN32)
+    target_link_libraries(${PROJECT_NAME} windowscodecs ole32 uuid)
+endif()
+
 
 
 

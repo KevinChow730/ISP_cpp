@@ -67,7 +67,7 @@
                 "-ExecutionPolicy",
                 "Bypass",
                 "-Command",
-                "$srcs = Get-ChildItem -Path \"${workspaceFolder}\\srcs\\sources\" -Filter *.cpp | ForEach-Object { $_.FullName }; & \"D:\\mingw64\\bin\\g++.exe\" -fdiagnostics-color=always \"-I${workspaceFolder}\\thirdparty\\easylog\" \"-I${workspaceFolder}\\thirdparty\\easybmp\" \"-I${workspaceFolder}\\thirdparty\\json\\nlohmann\" \"-I${workspaceFolder}\\srcs\\include\" -g \"${workspaceFolder}\\main.cpp\" @($srcs) -o \"${workspaceFolder}\\main.exe\""
+                "$srcs = Get-ChildItem -Path \"${workspaceFolder}\\srcs\\sources\" -Filter *.cpp | ForEach-Object { $_.FullName }; & \"D:\\mingw64\\bin\\g++.exe\" -fdiagnostics-color=always \"-I${workspaceFolder}\\thirdparty\\easylog\" \"-I${workspaceFolder}\\thirdparty\\easybmp\" \"-I${workspaceFolder}\\thirdparty\\json\\nlohmann\" \"-I${workspaceFolder}\\srcs\\include\" -g \"${workspaceFolder}\\main.cpp\" @($srcs) -lole32 -luuid -lwindowscodecs -o \"${workspaceFolder}\\main.exe\""
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
